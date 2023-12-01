@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Header from './components/header';
@@ -20,7 +19,7 @@ function App() {
     <div className="app">
       <Header title="Header"/>
       <div className="main-content">
-        <SideBar title="My Sidebar" menuList={menuList} />
+        <SideBar title="My Sidebar" menuList={menuList} logoPath={require('./components/img/logo.png')}/>
         <Content title="Content"/>
       </div>
       <Footer title="Footer" menuList={menuList}/>
